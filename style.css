@@ -134,11 +134,6 @@ h2, h3 {
     gap: 24px;
 }
 
-.nav_list li {
-    padding: 20px 0;
-}
-
-
 .nav_list li:nth-child(2), .nav_list li:nth-child(3) {
     position: relative;
 }
@@ -152,10 +147,7 @@ h2, h3 {
     font-weight: 500;
     transition: all;
     transition-duration: 300ms;
-}
-
-.nav_list li a:hover {
-    color: #a6b7f8;
+    padding: 20px 0;
 }
 
 .nav_list li svg {
@@ -164,9 +156,14 @@ h2, h3 {
     transition-duration: 300ms;
 }
 
-.nav_list li a:hover > svg {
-    stroke: #a6b7f8;
-    transform: rotate(180deg);
+@media (min-width: 901px) {   
+    .nav_list li a:hover {
+        color: #a6b7f8;
+    }
+    .nav_list li a:hover > svg {
+        stroke: #a6b7f8;
+        transform: rotate(180deg);
+    }
 }
 
 .nav_list-inner {
