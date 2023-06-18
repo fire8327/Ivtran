@@ -143,7 +143,7 @@ h2, h3 {
     position: relative;
 }
 
-.nav_list li a, .nav_list li > .openLink {
+.nav_list li a, .nav_list li .openLink {
     display: flex;
     align-items: center;
     gap: 8px;
@@ -201,13 +201,13 @@ h2, h3 {
     background-color: #01099C;
 }
 
-.nav_list-inner {
+/* .nav_list-inner {
     display: grid;
-}
-
-/* .nav_list li:hover > .nav_list-inner {
-    display: grid !important;
 } */
+
+.nav_list li:hover > .nav_list-inner {
+    display: grid !important;
+}
 
 .nav_services li {
     white-space: nowrap;
@@ -215,7 +215,7 @@ h2, h3 {
 
 .nav_services {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 0 24px;
 }
 
