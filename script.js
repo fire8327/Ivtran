@@ -5,17 +5,20 @@ $('.openMenu').click(() => {
     $('.openMenu').find('.midLine').toggleClass('opacity-0');
     $('.openMenu').find('.bottomLine').toggleClass('rt45 translate-Y');
 
-    $('body').toggleClass('overflow-hidden');
+    // $('body').toggleClass('overflow-hidden');
 });
 
+
 $('.openLink').each((o, link) => {
-    $('.inner_link').each((il, ilink) => {
-        $(link).click(() => {
-            $('#menu').removeClass('active');
-            if($(link).data('target') == $(ilink).data('title')) {
-                $(ilink).toggleClass('hidden');
-            }
-        });
+    $(link).click(() => {
+        $(link).closest('li').find('ul').toggleClass('hidden');
+        if($(link).closest('li').find('ul').hasClass('hidden')) {
+            $(link).closest('li').find('ul').attr('style', 'display: none !important');
+            $(link).find('svg').attr('style', 'transform: rotate(0deg)');
+        } else {
+            $(link).closest('li').find('ul').attr('style', 'display: grid');
+            $(link).find('svg').attr('style', 'transform: rotate(-180deg)');
+        }
     });
 });
 
