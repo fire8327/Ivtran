@@ -31,3 +31,13 @@ $('.closeMenu').each((c, close) => {
         $('#menu').toggleClass('active');
     });
 });
+
+const swiper = new Swiper('.swiper', {
+    loop: false,
+    slidesPerView: 1,
+  
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true
+    },
+  });
