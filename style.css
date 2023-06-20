@@ -602,12 +602,7 @@ h2, h3 {
 
     .nav_list-inner li a {
         color: #fff;
-    }
-
-    .openLink > svg {
-        rotate: -90deg;
-    }
-    
+    }    
 
     /* Calculation */
     .calculation_desc {
