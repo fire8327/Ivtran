@@ -97,7 +97,6 @@ h2, h3 {
 .contact_link {
     display: flex;
     flex-direction: column;
-    gap: 4px;
 }
 
 .contact_link a {
