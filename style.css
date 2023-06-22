@@ -108,14 +108,7 @@ h2, h3 {
 }
 
 .contact_link a:hover {
-    background: linear-gradient(180deg, #6688FF 0%, #4368F5 34.9%, #1931DA 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
-
-.contact_link a:hover:active {
-    background: linear-gradient(180deg, #99B0FF 0%, #6688FF 43.75%, #4368F5 100%);
+    background: linear-gradient(180deg, #4368F5 0%, #1931DA 43.23%, #0912B9 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -137,14 +130,7 @@ h2, h3 {
 }
 
 .link_profile:hover {
-    background: linear-gradient(180deg, #6688FF 0%, #4368F5 34.9%, #1931DA 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
-
-.link_profile:active {
-    background: linear-gradient(180deg, #99B0FF 0%, #6688FF 43.75%, #4368F5 100%);
+    background: linear-gradient(180deg, #4368F5 0%, #1931DA 43.23%, #0912B9 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -328,6 +314,7 @@ h2, h3 {
 .calculation_title {
     font-size: 36px;
     line-height: 1.2;
+    font-weight: 500;
     text-align: center;
     color: #01099C;
     margin-bottom: 56px;
@@ -400,13 +387,18 @@ h2, h3 {
 }
 
 .item_btn:hover {
-    /* background: linear-gradient(180deg, #4368F5 0%, #1931DA 43.23%, #0912B9 100%); */
-    background: linear-gradient(180deg, #6481f5 0%, #4c5cd3 43.23%, #353bb7 100%);
-    color: #fff;
+    background: linear-gradient(0deg, #B2C3FE 0%, #E0E7FF 100%);
+    color: #030978;
 }
 
 
 /* Slider */
+.swiper-pagination {
+    display: flex;
+    justify-content: center;
+    column-gap: 12px;
+}
+
 .swiper-pagination-bullets.swiper-pagination-horizontal {
     margin-top: 16px;
     bottom: auto;
@@ -460,7 +452,8 @@ h2, h3 {
 }
 
 .btn_slider {
-    padding: 12px 24px;
+    height: 56px;
+    padding: 0 24px;
     margin: 0;
     margin-top: 40px;
     border: none;
@@ -566,9 +559,17 @@ h2, h3 {
     /* Header */
     .top_header {
         display: flex;
-        justify-content: space-between;
+        justify-content: start;
         border: 1px solid #CED0E7;
         padding: 12px 10px;
+    }
+
+    .contacts {
+        padding-left: 45px;
+    }
+
+    .btn_menu {
+        margin-left: auto;
     }
 
     .menu_header {
@@ -585,6 +586,7 @@ h2, h3 {
         color: #030978;
         font-weight: 700;
         line-height: 1.5;
+        font-size: 16px;
         background: linear-gradient(360deg, #F1F4FF 0%, #DCE2F5 0%, #F5F8FF 100%);
         border-radius: 4px;
         cursor: pointer;
@@ -822,6 +824,7 @@ h2, h3 {
         grid-row: 2 / 3;
         grid-column: 1 / -1;
         margin-top: 20px;
+        padding-left: 0;
     }
 
     .contacts::before {
