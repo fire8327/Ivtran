@@ -468,8 +468,10 @@ h2, h3 {
 }
 
 .btn_slider:hover {
-    background: linear-gradient(180deg, #6481f5 0%, #4c5cd3 43.23%, #353bb7 100%);
-    /* background: linear-gradient(180deg, #214bf2 0%, #0f27d9 43.23%, #010ab8 100%); */
+    background: linear-gradient(180deg, #6688FF 0%, #4368F5 34.9%, #1931DA 100%);
+}
+.btn_slider:active {
+   background: linear-gradient(180deg, #99B0FF 0%, #6688FF 43.75%, #4368F5 100%);
 }
 
 .slide_main {
