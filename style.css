@@ -127,6 +127,7 @@ h2, h3 {
 
 .link_profile::before {
     content: url('img/profile.png');
+	height: 24px;
 }
 
 .link_profile:hover {
